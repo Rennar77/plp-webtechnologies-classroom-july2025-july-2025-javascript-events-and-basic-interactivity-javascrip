@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Welcome to My Interactive Page</h1>
+
+  <!-- Part 1: Event Handling -->
+  <button id="messageBtn">Click Me!</button>
+  <p id="messageArea"></p>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>🌗 Light / Dark Mode Toggle</h2>
+    <button id="toggleTheme">Toggle Theme</button>
+  </section>
+
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+    <p>Count: <span id="counter">0</span></p>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <h2>📋 Signup Form</h2>
+  <form id="signupForm">
+    <label>Name: <input type="text" id="name"></label>
+    <small class="error" id="nameError"></small><br>
+
+    <label>Email: <input type="text" id="email"></label>
+    <small class="error" id="emailError"></small><br>
+
+    <label>Password: <input type="password" id="password"></label>
+    <small class="error" id="passwordError"></small><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p id="formSuccess"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
